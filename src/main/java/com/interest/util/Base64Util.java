@@ -6,7 +6,6 @@ import java.util.Base64;
 
 /**
  * @ClassName Base64Util
- * @DESCRIPTION TODO
  * @Author Mr.zf, link:zhangfu@broadtech.com.cn
  * @Date 2023/8/28 13:45
  */

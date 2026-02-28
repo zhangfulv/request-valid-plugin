@@ -9,7 +9,6 @@ import java.io.File;
 
 /**
  * @ClassName FileWatchUtil
- * @DESCRIPTION TODO
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/1/18 18:24
  */

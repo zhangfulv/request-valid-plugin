@@ -12,7 +12,6 @@ import java.util.Properties;
 
 /**
  * @ClassName YamlUtil yml读取信息工具类
- * @DESCRIPTION TODO
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/1/26 10:48
  * 依赖:

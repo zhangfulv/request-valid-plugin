@@ -21,7 +21,6 @@ import java.util.Map;
 
 /**
  * @ClassName DefaultBrdVerifySign
- * @DESCRIPTION TODO
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/2/1 14:59
  */

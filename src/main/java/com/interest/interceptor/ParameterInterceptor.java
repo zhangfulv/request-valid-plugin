@@ -10,7 +10,6 @@ import org.springframework.web.servlet.ModelAndView;
 
 /**
  * @ClassName ParameterInterceptor
- * @DESCRIPTION TODO
  * @Date 2021/1/25 17:21
  */
 public class ParameterInterceptor implements HandlerInterceptor {

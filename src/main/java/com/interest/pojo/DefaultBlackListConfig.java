@@ -5,7 +5,6 @@ import java.util.List;
 
 /**
  * @ClassName DefaultBlackListConfig
- * @DESCRIPTION TODO
  * @Author xulian
  * @Date 2021/1/25 17:24
  * @Component

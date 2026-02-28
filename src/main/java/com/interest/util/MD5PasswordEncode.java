@@ -6,7 +6,6 @@ import java.util.Locale;
 
 /**
  * @ClassName MD5PasswordEncode
- * @DESCRIPTION TODO
  * @Author xulian
  * @Date 2021/1/25 17:15
  */

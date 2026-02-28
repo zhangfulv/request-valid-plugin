@@ -5,7 +5,7 @@ import org.apache.commons.lang3.StringUtils;
 
 /**
  * @ClassName HotDeployProperties
- * @DESCRIPTION TODO 热加载监听配置文件
+ * @DESCRIPTION  热加载监听配置文件
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/1/28 16:42
  */
