@@ -4,4 +4,8 @@ contenttype:
   - application/x-www-form-urlencoded
   - application/json
   - application/json; charset=UTF-8
-timeout:
+timeout: 30s
+whiteuri:
+  - /xxxapi/**
+encodeSalt: 803f243e21aa4bf4a139046c0141bcf8
+emptyValueJoinVerify: true
