@@ -57,4 +57,18 @@
         }
     }
 ```
+4.配置参数说明
+```
+    uri:
+      - /xxxapi/**  需要拦截的校验的请求接口地址,支持通配符
+    contenttype:
+      - application/x-www-form-urlencoded //需要拦截的请求类型
+      - application/json
+      - application/json; charset=UTF-8
+    timeout: 30s //请求地址超时验证
+    whiteuri:
+      - /xxxapi/** //白名单,支持部分接口地址不进行校验直接通过
+    encodeSalt: 803f243e21aa4bf4a139046c0141bcf8 //对参数进行md5加解密的盐值
+    emptyValueJoinVerify: true //对空值是否纳入验签
+```
 ###
