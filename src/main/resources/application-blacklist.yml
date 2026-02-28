@@ -1,0 +1,7 @@
+uri:
+  - /xxxapi/**
+contenttype:
+  - application/x-www-form-urlencoded
+  - application/json
+  - application/json; charset=UTF-8
+timeout:
