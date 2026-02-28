@@ -1,6 +1,7 @@
 package com.interest.wrapper;
 
 import org.springframework.web.multipart.support.StandardServletMultipartResolver;
+
 import javax.servlet.ServletInputStream;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletRequestWrapper;
@@ -12,13 +13,14 @@ import java.util.Map;
 
 /**
  * @ClassName BodyReaderHttpServletRequestWrapper
+ * @DESCRIPTION TODO
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/1/18 10:34
  */
-public class DetaultBodyHttpServletRequestWrapper extends HttpServletRequestWrapper {
+public class DefaultBodyHttpServletRequestWrapper extends HttpServletRequestWrapper {
     private byte[] body;
     private ServletInputStream inputStream;
-    public DetaultBodyHttpServletRequestWrapper(HttpServletRequest request) throws IOException {
+    public DefaultBodyHttpServletRequestWrapper(HttpServletRequest request) throws IOException {
         super(request);
         StandardServletMultipartResolver standardServletMultipartResolver = new StandardServletMultipartResolver();
         //做判断，过滤掉form表单形式的，避免form表单的参数

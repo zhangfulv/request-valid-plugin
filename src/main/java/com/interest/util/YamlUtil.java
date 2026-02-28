@@ -12,6 +12,7 @@ import java.util.Properties;
 
 /**
  * @ClassName YamlUtil yml读取信息工具类
+ * @DESCRIPTION TODO
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/1/26 10:48
  * 依赖:
@@ -97,8 +98,8 @@ public class YamlUtil {
         String osName = props.getProperty("os.name"); //操作系统名称
         System.out.println("osName = [" + osName + "]");*/
 
-//        ClassPathResource resource = new ClassPathResource("/home/projects/ideaWorkspace/verify2.0/src/main/resources/application-blacklist.yml\n");
-        Map<String,Object> map = YamlUtil.readYaml("/home/projects/ideaWorkspace/verify2.0/src/main/resources/application-blacklist.yml",Map.class);
+//        ClassPathResource resource = new ClassPathResource("/home/zhangfu/projects/ideaWorkspace/verify2.0/src/main/resources/application-blacklist.yml\n");
+        Map<String,Object> map = YamlUtil.readYaml("/home/zhangfu/projects/ideaWorkspace/verify2.0/src/main/resources/application-blacklist.yml",Map.class);
         System.out.println("args = [" + map + "]");
 
     }

@@ -1,5 +1,8 @@
 package com.interest.util;
 
+import cn.hutool.cache.CacheUtil;
+import cn.hutool.cache.impl.TimedCache;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -16,10 +19,11 @@ public class VerifyConstants {
    public static final String UNICODE_SIGN_ERROR = "sign error";
    public static final int UNICODE_SIGN_ERROE_STATUS = 403;
 
+   /**
+   * desc: 创建一个缓存器，默认30s清空.
+   */
+   public volatile static TimedCache<String,Integer> SIGN_CACHE = CacheUtil.newTimedCache(30);
+   public static final Object syncObj = new Object();
 
-   public static final String UNICODE_CLIENT_TOKEN = "CLIENT-TOKEN"; //需要RSA加密
-   public static final String UNICODE_MODULE_ID = "CLIENT-MODULE-ID";
-   public static final String UNICODE_CLIENT_TIME = "CLIENT-TIME";
-   public static final String UNICODE_CLIENT_SIGN = "CLIENT-SIGN";
 
 }

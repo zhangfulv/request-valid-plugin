@@ -1,11 +1,14 @@
 package com.interest.util;
 
+import cn.hutool.core.lang.Console;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Locale;
 
 /**
  * @ClassName MD5PasswordEncode
+ * @DESCRIPTION TODO
  * @Author xulian
  * @Date 2021/1/25 17:15
  */
@@ -25,7 +28,7 @@ public class MD5PasswordEncode  {
 
         pass1 = pass1.toLowerCase(Locale.ENGLISH);
         pass2 = pass2.toLowerCase(Locale.ENGLISH);
-
+        Console.log("pass1 -> {} , pass2->{}", new Object[]{pass1,pass2});
         return pass1.equals(pass2);
     }
 
@@ -45,7 +48,7 @@ public class MD5PasswordEncode  {
         if ((salt == null) || "".equals(salt)) {
             return password;
         } else {
-            return password + "{" + salt.toString() + "}";
+            return password  + salt.toString() ;
         }
     }
 
@@ -63,10 +66,10 @@ public class MD5PasswordEncode  {
     }
 
     public static void main(String[] args) {
-        String str = "SETTLEMENT=1,_dc=1611904341639&iii=1611904341641&limit=20&page=1&start=0";
+        String str = "condition={\"rural_id\":\"59\",\"status\":1,\"ascription\":\"330127206207\"}&iii=1704681779512&table=CASZNLRURALGUIDE";
         //SETTLEMENT=1,_dc=1611904341639&iii=1611904341641&limit=20&page=1&start=0
         //SETTLEMENT=1&_dc=1611904341639&iii=1611904341641&limit=20&page=1&start=0
-        System.out.println("args = [" + MD5PasswordEncode.encodePassword(str,null)+ "]");
+        System.out.println("args = [" + MD5PasswordEncode.encodePassword(str,"803f243e21aa4bf4a139046c0141bcf8")+ "]");
     }
 }
 

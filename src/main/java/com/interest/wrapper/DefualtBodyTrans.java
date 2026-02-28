@@ -6,11 +6,13 @@ import java.io.IOException;
 
 /**
  * @ClassName DefualtBodyTrans
+ * @DESCRIPTION TODO
  * @Author Mr.zf, link:282734967@qq.com
  * @Date 2021/1/29 8:38
  */
+@Deprecated
 public class DefualtBodyTrans implements IBodyTrans {
-    private DetaultBodyHttpServletRequestWrapper detaultBodyHttpServletRequestWrapper = null;
+    private DefaultBodyHttpServletRequestWrapper detaultBodyHttpServletRequestWrapper = null;
     @Override
     public String getBody() {
         return detaultBodyHttpServletRequestWrapper.getBody();
@@ -18,7 +20,7 @@ public class DefualtBodyTrans implements IBodyTrans {
 
     @Override
     public IBodyTrans builder(HttpServletRequest request) throws IOException{
-        detaultBodyHttpServletRequestWrapper = new DetaultBodyHttpServletRequestWrapper(request);
+        detaultBodyHttpServletRequestWrapper = new DefaultBodyHttpServletRequestWrapper(request);
         return this;
     }
 
